@@ -32,6 +32,12 @@
     width: 5vh;
 }
 
+.rightButton {
+    border-radius: 0 10px 10px 0;
+    margin: 2vh 0;
+    padding: 2vh
+}
+
 .black {
     background-color: black;
     color: aliceblue;
