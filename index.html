@@ -8,82 +8,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flex">
+    <div class="flex fullWidth">
     
-        <div id="leftContainer" class="flex column">
+        <div id="leftContainer" class="flex column fullHeight">
             <div class="topButtons">
-                <button>Order</button>
-                <button>Tender</button>
-                <button>Functions</button>
+                <button type="button">Order</button>
+                <button type="button">Tender</button>
+                <button type="button">Functions</button>
             </div>
             <div class="runningOrder"></div>
             <div class="tenderButtons"></div>
         </div>
    
 
-    <div>
-        <div id="topButtons">
-            <button>Misc</button>
-            <button>Beans</button>
-            <button>RTD&E</button>
-            <button>Food</button>
-            <button>Drink Builder</button>
-        </div>
-        
-        <div id="middleContainer">
-            <div>
-                <button>Americano</button>
-                <button>Espresso</button>
-                <button>Espresso Macchiato</button>
-                <button>Espresso Con Panna</button>
-                <div></div>
+        <div class="fullHeight">
+            <div id="topButtons" class="flex spaceBetween">
+                <button type="button">Misc</button>
+                <button type="button">Beans</button>
+                <button type="button">RTD&E</button>
+                <button type="button">Food</button>
+                <button type="button">Drink Builder</button>
             </div>
-            <div>
-                <button>Iced Shaken Espresso</button>
-                <button>Brown Sugar Oat Shaken Espresso</button>
-                <button>Chocolate Almondmilk Shaken Espresso</button>
-                <button>Toasted Vanilla Oat Shaken Espresso</button>
-                <button>Oleato Iced Oatmilk Shaken Espresso</button>
+            
+            <div class="flex">
+                <div id="middleContainer" class="">
+                    <div class="center">
+                        <button type="button" class="purple">Americano</button>
+                        <button type="button" class="purple">Espresso</button>
+                        <button type="button" class="purple">Espresso Macchiato</button>
+                        <button type="button" class="purple">Espresso Con Panna</button>
+                        <div></div>
+                    </div>
+                    <div class="">
+                        <button type="button" class="purple">Iced Shaken Espresso</button>
+                        <button type="button" class="purple">Brown Sugar Oat Shaken Espresso</button>
+                        <button type="button" class="purple">Chocolate Almondmilk Shaken Espresso</button>
+                        <button type="button" class="purple">Toasted Vanilla Oat Shaken Espresso</button>
+                        <button type="button" class="purple">Oleato Iced Oatmilk Shaken Espresso</button>
+                    </div>
+                    <div class="">
+                        <button type="button" class="yellow">Latte</button>
+                        <button type="button" class="yellow">Cinnamon Dolce Latte</button>
+                        <button type="button" class="grey">Cappuccino</button>
+                        <button type="button" class="blue">Flat White</button>
+                        <button type="button" class="blue">Honey Almondmilk Flat White</button>
+                    </div>
+                    <div class="">
+                        <button type="button" class="yellow">Oleato Latte w/Oatmilk</button>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="">
+                        <button type="button" class="purple">Caramel Macchiato</button>
+                    </div>
+                    <div class="">
+                        <button type="button" class="sienna">Mocha</button>
+                        <button type="button" class="sienna">White Chocolate Mocha</button>
+                    </div>
+                    <div class="">
+                        <button type="button" class="black">More Seasonal Espresso</button>
+                    </div>
+                </div>
+                
+                <div id="rightContainer" class="grey">
+                    <div>hello?</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
-            <div>
-                <button>Latte</button>
-                <button>Cinnamon Dolce Latte</button>
-                <button>Cappuccino</button>
-                <button>Flat White</button>
-                <button>Honey Almondmilk Flat White</button>
-            </div>
-            <div>
-                <button>Oleato Latte w/Oatmilk</button>
-            </div>
-            <div>
-                <button>Caramel Macchiato</button>
-            </div>
-            <div>
-                <button>Mocha</button>
-                <button>White Chocolate Mocha</button>
-            </div>
-            <div>
-                <button>More Seasonal Espresso</button>
-            </div>
-        </div>
-        
-        <div id="rightContainer">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
 
-        <div id="bottomButtons">
-            <button>Item Availability</button>
-            <button>SKU Entry</button>
-            <button>Copy Drink</button>
-            <button>Add Shot</button>
-            <button>Ask Me</button>
-            <button>Next Drink</button>
+            <div id="bottomButtons" class="">
+                <button type="button" class="black">Item Availability</button>
+                <button type="button" class="black">SKU Entry</button>
+                <button type="button" class="black">Copy Drink</button>
+                <button type="button" class="black">Add Shot</button>
+                <button type="button" class="black">Ask Me</button>
+                <button type="button" class="black">Next Drink</button>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 </html>

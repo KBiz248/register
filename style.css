@@ -10,6 +10,14 @@
     height: 100vh;
 }
 
+.fullWidth {
+    width: 100vw;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
 .black {
     background-color: black;
     color: aliceblue;
@@ -30,6 +38,8 @@
 button {
     height: 10vh;
     width: 16vh;
+    border-radius: 5px;
+    vertical-align: top;
 }
 
 .sienna {
@@ -38,4 +48,8 @@ button {
 
 .yellow {
     background-color:lightyellow;
+}
+
+#bottomButtons {
+    vertical-align: bottom;
 }
