@@ -6,3 +6,36 @@
     flex-direction: column;
 }
 
+.fullHeight {
+    height: 100vh;
+}
+
+.black {
+    background-color: black;
+    color: aliceblue;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.grey {
+    background-color: gray;
+}
+
+.purple {
+    background-color: darkorchid;
+}
+
+button {
+    height: 10vh;
+    width: 16vh;
+}
+
+.sienna {
+    background-color: sienna;
+}
+
+.yellow {
+    background-color:lightyellow;
+}
