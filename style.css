@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .flex {
     display: flex;
 }
@@ -21,6 +25,12 @@
 
 .spaceBetween {
     justify-content: space-between;
+}
+
+.oval {
+    border-radius: 50%;
+    background-image: linear-gradient(teal, cyan);
+    width: 20vh;
 }
 
 .pad {
