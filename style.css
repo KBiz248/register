@@ -85,7 +85,8 @@ body {
     
 }
 
-button {
+button,
+.empty {
     height: 10vh;
     width: 16vh;
     border-radius: 5px;
