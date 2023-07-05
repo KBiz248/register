@@ -78,6 +78,21 @@ body {
     padding: 2vh;
 }
 
+.bottomTab {
+    border-radius: 0 0 10px 10px;
+    margin: 0 1vh;
+    width: 12vh;
+    /*height: 5vh;*/
+    background-color: lightgray;
+    text-align: center;
+    padding:2vh 0;
+}
+
+#drinkBuilderBottomTabs {
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
 .black {
     
     background-image: linear-gradient(black, gray);

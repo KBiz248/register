@@ -32,6 +32,7 @@
             </div>
 
             <div class="flex">
+                <div class="flex column">
                 <div id="espressoMenuContainer" class="white active">
                     <div class="flex spaceBetween">
                         <div><button type="button" class="purple" onclick="addAmericano()">Americano</button></div>
@@ -120,7 +121,7 @@
 
                 </div>
 
-                <div id="syrupMenuContainer" class="white inactive">
+                <div id="syrupMenuContainer" class="white inactive spaceBetween">
                     <div class="flex spaceBetween">
                         <button type="button" class="black">No</button>
                         <button type="button" class="black">Sub</button>
@@ -237,6 +238,15 @@
                         <button type="button" class="black">More Custom Directions</button>
                     </div>
                 </div>
+
+                <div id="drinkBuilderBottomTabs" class="flex">
+                    <div class="bottomTab">Brewed</div>
+                    <div class="bottomTab">Espresso</div>
+                    <div class="bottomTab">Blended</div>
+                    <div class="bottomTab">Tea</div>
+                    <div class="bottomTab">Other</div>
+                </div>
+                </div>
                 
                 <div id="rightContainer" class="gray flex column">
                     <div id="icedMenu" class="flex column lightGray rightButton spaceBetween" onclick="displayIcedMenu()">
@@ -280,6 +290,8 @@
 
                 </div>
             </div>
+
+            
 
             <div id="bottomButtons" class="flex spaceBetween">
                 <button type="button" class="black">Item Availability</button>
