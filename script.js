@@ -44,6 +44,15 @@ function displaySyrupMenu() {
     syrupMenuContainer.classList.add('active');
     syrupMenuContainer.classList.remove('inactive');
 }
+
+const milkMenuContainer = document.getElementById('milkMenuContainer')
+const milkMenuTab = document.getElementById('milkMenuTab')
+
+function displayMilkMenu() {
+    closeCurrentMenu();
+    milkMenuContainer.classList.add('active');
+    milkMenuContainer.classList.remove('inactive');
+}
  
 const customMenuContainer = document.getElementById('customMenuContainer')
 const customMenuTab = document.getElementById('customMenuTab')

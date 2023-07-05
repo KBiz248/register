@@ -24,11 +24,11 @@
 
         <div class="fullHeight flex column">
             <div id="topButtons" class="flex spaceBetween">
-                <button type="button" class="oval">Misc</button>
-                <button type="button" class="oval">Beans</button>
-                <button type="button" class="oval">RTD&E</button>
-                <button type="button" class="oval">Food</button>
-                <button type="button" class="oval">Drink Builder</button>
+                <button type="button" class="oval" id="miscTopButton">Misc</button>
+                <button type="button" class="oval" id="beansTopButton">Beans</button>
+                <button type="button" class="oval" id="rtd&eTopButton">RTD&E</button>
+                <button type="button" class="oval" id="foodTopButton">Food</button>
+                <button type="button" class="oval" id="drinkBuilderTopButton">Drink Builder</button>
             </div>
 
             <div class="flex">
@@ -173,6 +173,10 @@
                     </div>
                 </div>
 
+                <div id="milkMenuContainer" class="white inactive">
+                    
+                </div>
+
                 <div id="customMenuContainer" class="white inactive">
                     <div class="flex spaceBetween">
                         <button type="button" class="black">No</button>
@@ -240,16 +244,16 @@
                 </div>
 
                 <div id="drinkBuilderBottomTabs" class="flex">
-                    <div class="bottomTab">Brewed</div>
-                    <div class="bottomTab">Espresso</div>
-                    <div class="bottomTab">Blended</div>
-                    <div class="bottomTab">Tea</div>
-                    <div class="bottomTab">Other</div>
+                    <div id="brewedBottomTab" class="bottomTab">Brewed</div>
+                    <div id="espressoBottomTab" class="bottomTab">Espresso</div>
+                    <div id="blendedBottomTab" class="bottomTab">Blended</div>
+                    <div id="teaBottomTab" class="bottomTab">Tea</div>
+                    <div id="otherBottomTab" class="bottomTab">Other</div>
                 </div>
                 </div>
                 
                 <div id="rightContainer" class="gray flex column">
-                    <div id="icedMenu" class="flex column lightGray rightButton spaceBetween" onclick="displayIcedMenu()">
+                    <div id="icedMenu" class="lightGray rightButton spaceBetween" onclick="displayIcedMenu()">
                         <div class="flex">
                             <div class="border small"></div>
                             <div>Iced</div>
@@ -273,7 +277,7 @@
                         <div class="border big"></div>
                     </div>
                     
-                    <div id="milkTab" class="lightGray rightButton">
+                    <div id="milkTab" class="lightGray rightButton" onclick="displayMilkMenu()">
                         <div>Milk</div>
                         <div class="border big"></div>
                     </div>
