@@ -45,6 +45,12 @@ function displaySyrupMenu() {
     syrupMenuContainer.classList.remove('inactive');
 }
  
+const customMenuContainer = document.getElementById('customMenuContainer')
+const customMenuTab = document.getElementById('customMenuTab')
 
-
+function displayCustomMenu() {
+    closeCurrentMenu();
+    customMenuContainer.classList.add('active');
+    customMenuContainer.classList.remove('inactive');
+}
 //icedMenu.addEventListener('click', () => displayIcedMenu())
