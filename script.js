@@ -30,8 +30,19 @@ function closeCurrentMenu(){
 
 function displayIcedMenu() {
     closeCurrentMenu();
+    icedMenu.style.backgroundColor = 'white';
     icedMenuContainer.classList.add('active');
     icedMenuContainer.classList.remove('inactive');
+}
+
+const syrupMenuContainer = document.getElementById('syrupMenuContainer')
+const syrupMenuTab = document.getElementById('syrupMenuTab')
+
+function displaySyrupMenu() {
+    closeCurrentMenu();
+    syrupMenuTab.style.backgroundColor = 'white';
+    syrupMenuContainer.classList.add('active');
+    syrupMenuContainer.classList.remove('inactive');
 }
  
 
