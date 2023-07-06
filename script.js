@@ -19,14 +19,19 @@ currentWindow[0].classList.remove('active');
 console.log(currentWindow)
 }
 
-const icedMenuContainer = document.getElementById('icedMenuContainer')
-const icedMenu = document.getElementById('icedMenu');
+
 function closeCurrentMenu(){
     const currentWindow = document.getElementsByClassName('active');
     currentWindow[0].classList.add('inactive');
     currentWindow[0].classList.remove('active');
 }
 
+/*
+Drink Builder menu side tabs
+*/
+
+const icedMenuContainer = document.getElementById('icedMenuContainer')
+const icedMenu = document.getElementById('icedMenu');
 
 function displayIcedMenu() {
     closeCurrentMenu();
@@ -62,4 +67,19 @@ function displayCustomMenu() {
     customMenuContainer.classList.add('active');
     customMenuContainer.classList.remove('inactive');
 }
+
+/*
+Drink Builder menu bottom tabs
+*/
+
+const espressoMenuContainer = document.getElementById('espressoMenuContainer')
+
+function displayEspressoMenu() {
+    closeCurrentMenu();
+    espressoMenuContainer.classList.add('active');
+    espressoMenuContainer.classList.remove('inactive');
+}
+
+
+
 //icedMenu.addEventListener('click', () => displayIcedMenu())
