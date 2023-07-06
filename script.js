@@ -72,6 +72,14 @@ function displayCustomMenu() {
 Drink Builder menu bottom tabs
 */
 
+const brewedMenuContainer = document.getElementById('brewedMenuContainer')
+
+function displayBrewedMenu() {
+    closeCurrentMenu();
+    brewedMenuContainer.classList.add('active');
+    brewedMenuContainer.classList.remove('inactive')
+}
+
 const espressoMenuContainer = document.getElementById('espressoMenuContainer')
 
 function displayEspressoMenu() {
@@ -80,6 +88,29 @@ function displayEspressoMenu() {
     espressoMenuContainer.classList.remove('inactive');
 }
 
+const blendedMenuContainer = document.getElementById('blendedMenuContainer')
+
+function displayBlendedMenu() {
+    closeCurrentMenu();
+    blendedMenuContainer.classList.add('active');
+    blendedMenuContainer.classList.remove('inactive');
+}
+
+const teaMenuContainer = document.getElementById('teaMenuContainer')
+
+function displayTeaMenu() {
+    closeCurrentMenu();
+    teaMenuContainer.classList.add('active');
+    teaMenuContainer.classList.remove('inactive');
+}
+
+const otherMenuContainer = document.getElementById('otherMenuContainer')
+
+function displayOtherMenu() {
+    closeCurrentMenu();
+    otherMenuContainer.classList.add('active');
+    otherMenuContainer.classList.remove('inactive');
+}
 
 
 //icedMenu.addEventListener('click', () => displayIcedMenu())
