@@ -9,6 +9,8 @@
 </head>
 <body>
     <script src="script.js" defer></script>
+    <script src="drink-info.js" defer></script>
+    <script src="button-functions.js" defer></script>
     <div class="flex fullWidth gray">
     
         <div id="leftContainer" class="flex column fullHeight">
@@ -17,7 +19,7 @@
                 <button type="button">Tender</button>
                 <button type="button">Functions</button>
             </div>
-            <div class="runningOrder"></div>
+            <div id="order" class="runningOrder"></div> <!--id or class may not be necessary-->
             <div class="tenderButtons"></div>
         </div>
    
@@ -91,18 +93,18 @@
                         <button type="button" class="black">Light</button>
                     </div>
                     <div class="flex spaceBetween">
-                        <button type="button" class="lightGray">Caramel<br>Syrup</button>
-                        <button type="button" class="lightGray">Cinnamon Dolce<br>Syrup</button>
-                        <button type="button" class="lightGray">Hazelnut<br>Syrup</button>
-                        <button type="button" class="lightGray">Toffee Nut<br>Syrup</button>
-                        <button type="button" class="lightGray">Vanilla<br>Syrup</button>
+                        <button type="button" class="lightGray syrup">Caramel<br> Syrup </button>
+                        <button type="button" class="lightGray syrup">Cinnamon Dolce<br> Syrup </button>
+                        <button type="button" class="lightGray syrup">Hazelnut<br> Syrup </button>
+                        <button type="button" class="lightGray syrup">Toffee Nut<br> Syrup </button>
+                        <button type="button" class="lightGray syrup">Vanilla<br> Syrup </button>
                     </div>
                     <div class="flex spaceBetween">
-                        <button type="button" class="lightGray">Classic<br>Syrup</button>
-                        <button type="button" class="lightGray">Peppermint<br>Syrup</button>
-                        <button type="button" class="lightGray">Toasted Vanilla<br>Syrup</button>
-                        <button type="button" class="lightGray">Brown Sugar<br>Syrup</button>
-                        <button type="button" class="lightGray">Cinnamon<br>Caramel<br>Syrup</button>
+                        <button type="button" class="lightGray syrup">Classic<br>Syrup</button>
+                        <button type="button" class="lightGray syrup">Peppermint<br>Syrup</button>
+                        <button type="button" class="lightGray syrup">Toasted Vanilla<br>Syrup</button>
+                        <button type="button" class="lightGray syrup">Brown Sugar<br>Syrup</button>
+                        <button type="button" class="lightGray syrup">Cinnamon<br>Caramel<br>Syrup</button>
                     </div>
                     <div class="flex spaceBetween">
                         <button type="button">Chai</button>
@@ -119,14 +121,14 @@
                         <div class="empty"></div>
                     </div>
                     <div class="flex spaceBetween">
-                        <button type="button" class="purple">Mocha<br>Sauce</button>
-                        <button type="button" class="purple">White Chocolate<br>Mocha<br>Sauce</button>
-                        <button type="button" class="purple">Caramel<br>Sauce</button>
-                        <button type="button" class="purple">Dark Caramel<br>Sauce</button>
+                        <button type="button" class="purple sauce">Mocha<br>Sauce</button>
+                        <button type="button" class="purple sauce">White Chocolate<br>Mocha<br>Sauce</button>
+                        <button type="button" class="purple sauce">Caramel<br>Sauce</button>
+                        <button type="button" class="purple sauce">Dark Caramel<br>Sauce</button>
                         <div class="empty"></div>
                     </div>
                     <div class="flex spaceBetween">
-                        <button type="button" class="purple">White Chocolate<br>Mint<br>Sauce</button>
+                        <button type="button" class="purple sauce">White Chocolate<br>Mint<br>Sauce</button>
                         <button type="button">Macadamia<br>Syrup</button>
                         <div class="empty"></div>
                         <div class="empty"></div>
@@ -210,7 +212,7 @@
 
                 <div id="espressoMenuContainer" class="white inactive">
                     <div class="flex spaceBetween">
-                        <div><button type="button" class="purple" onclick="addAmericano()">Americano</button></div>
+                        <div><button type="button" class="purple espressoDrink">Americano</button></div>
                         <div><button type="button" class="purple">Espresso</button></div>
                         <div><button type="button" class="purple">Espresso Macchiato</button></div>
                         <div><button type="button" class="purple">Espresso Con Panna</button></div>
@@ -225,8 +227,8 @@
                     </div>
                     <div class="flex spaceBetween">
                         <button type="button" class="yellow">Latte</button>
-                        <button type="button" class="yellow">Cinnamon Dolce Latte</button>
-                        <button type="button" class="lightGray">Cappuccino</button>
+                        <button type="button" class="yellow" onclick="addCinnamonDolceLatte()">Cinnamon Dolce Latte</button>
+                        <button type="button" class="lightGray" onclick="addCappuccino()">Cappuccino</button>
                         <button type="button" class="blue">Flat White</button>
                         <button type="button" class="blue">Honey Almondmilk Flat White</button>
                     </div>
